@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="header">
+         <img class="img" src="./img/Vector (1).svg" alt="">
+         <img class="img" src="./img/ponto.svg" alt="">
+         <img class="img" src="./img/menu.png" alt="">
+         <img class="img" src="./img/house-value.png" alt="">
+         <img class="img" src="./img/3ponto.svg">
+      </div>
+      <div class="aparecernumeros">
+   <div id="previous" class="previous"></div>
+   <div id="resultado" class="letra"></div>
+</div>
+<div class="teclado">
+   <div class="grupo">
+      <button class="clean" onclick= "clean()">AC</button>
+      <button class="backspace"><img class="img3" src="./img/backspace_FILL0_wght400_GRAD0_opsz24.svg" alt="" onclick= "back()"></button>
+      <button id="%" onclick="insertOperation('%')">%</button>
+      <button id="÷" onclick="insertOperation('÷')">÷</button>
+   </div>
+
+   <div class="grupo">
+      <button class="cor" id="sete" onclick= "insert('7')">7</button>
+      <button class="cor" id="oito" onclick= "insert('8')">8</button>
+      <button class="cor" id="nove" onclick= "insert('9')">9</button>
+      <button onclick= "insertOperation('x')">x</button>
+   </div>
+   <div class="grupo">
+      <button class="cor" id="quatro" onclick= "insert('4')">4</button>
+      <button  class="cor" id="cinco" onclick="insert('5')">5</button>
+      <button  class="cor"id="seis" onclick="insert('6')">6</button>
+      <button onclick= "insertOperation('-')">-</button>
+   </div>
+   <div class="grupo">
+      <button  class="cor" id="um" onclick="insert('1')">1</button>
+      <button class="cor" id="dois" onclick="insert('2')">2</button>
+      <button class="cor" id="tres" onclick="insert('3')">3</button>
+      <button onclick= "insertOperation('+')">+</button>
+   </div>
+   <div class="grupo">
+      <button><img class="img2" src="/img/replace-pictures.svg"></button>
+      <button class="cor" onclick= "insert('0')">0</button>
+      <button class="cor"  id="ponto" onclick= "insert('.')">.</button>
+      <button onclick="calcular()">=</button>
+      
+
+   </div>
+</div>
+</div>
+<script src="./scripts.js"></script>
+</div>      
+
+</body>
+
+</html>
