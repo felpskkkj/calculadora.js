@@ -28,7 +28,7 @@ body {
     height: 90vh;
 
     justify-content: space-between;
-    padding-left: 12px;
+    /*padding-left: 12px;*/
    
 }
 
@@ -55,7 +55,7 @@ button{
     aspect-ratio: 1/1;
     width: 10vh;
     border-radius: 5vh;
-    color: orange;
+    color: rgb(255, 143, 5);
     background-color: transparent;
     outline: none;
     border: none;
