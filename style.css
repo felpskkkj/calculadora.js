@@ -98,7 +98,7 @@ width: 5vh;
 
 
 .aparecernumeros{
-    background-color: #222;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
