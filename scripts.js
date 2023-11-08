@@ -1,3 +1,8 @@
+function mudancaApagar() {
+  if(document.getElementById("resultado") != "" || document.getElementById("previous") != "") {
+    document.getElementById("sera").innerInner = "C"
+  }
+}
 //let ponto = document.getElementById("ponto");
 let currentOperation = "";
 function insert(num) {
@@ -12,6 +17,7 @@ function insert(num) {
 }
 //}
 function clean() {
+  
   document.getElementById("resultado").innerText = "";
   document.getElementById("previous").innerText = "";
 }
@@ -40,12 +46,12 @@ function insertOperation(x) {
   }
 }
 function calcular() {
- 
   let operacaoValor;
   let previous = document.getElementById("previous").innerText;
   let current = document.getElementById("resultado").innerText;
   let _previous = parseFloat(previous);
   let _current = parseFloat(current);
+  
 
   if (isNaN(_previous) || isNaN(_current)) return;
 
@@ -77,3 +83,10 @@ function calcular() {
 //  calculo.addEventListener('click', )
 //  }
 // if ((resultado == "" || resultado.includes(".")) && x == ".") return;
+
+
+mudancaApagar()
+
+
+
+
